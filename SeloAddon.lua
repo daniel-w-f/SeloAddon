@@ -8,8 +8,16 @@ SLASH_ADDONSELO1 = "/as";
 SlashCmdList["ADDONSELO"] = SeloAddon.SlashCmdHandler;
 
 SLASH_SELOADDON1 = "/sa";
-SlashCmdList["SELOADDON"] = function(msg, _)
+-- SlashCmdList["SELOADDON"] = function(msg, _)
+SlashCmdList["SELOADDON"] = function(msg, editbox)
     print("Hello, WoW!")
+    if msg ~= "" then
+        print("arg1: '".. msg .."'");
+    end
+
+    if editbox ~= "" then
+        print("arg2: '".. editbox .."'");
+    end
 end
 
 function SeloAddon_OnLoad()
