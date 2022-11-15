@@ -29,8 +29,14 @@ SlashCmdList["SELOADDON"] = function(msg, editbox)
         print("arg1: '".. msg .."'");
     end
 
-    if editbox ~= "" then
-        print("arg2: '".. editbox .."'");
+    if editbox then
+        print("arg2: '");
+        print(editbox);
+        -- change the text on the editBox.
+        -- Why do I get this nullpoint exception if I check `if editbox then`?!
+        -- SeloAddon\SeloAddon.lua:36: attempt to index global 'editBox' (a nil value)
+        editBox:Show()
+        editBox:SetText("Blah blah blah!")
     end
 end
 
