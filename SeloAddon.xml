@@ -1,0 +1,8 @@
+<!-- <Script file="SeloAddon.lua"/> 
+<Frame name="SeloAddon"> 
+    <Scripts> 
+        <OnLoad> 
+            SeloAddon_OnLoad();
+        </OnLoad>
+    </Scripts>
+</Frame> -->

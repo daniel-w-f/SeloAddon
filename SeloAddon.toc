@@ -1,0 +1,6 @@
+## Interface: 80205
+## Title : SeloAddon
+## Notes: This AddOn does nothing but display a frame with a button
+## Author: Selo
+SeloAddon.xml
+SeloAddon.lua
